@@ -2,14 +2,10 @@ import React from 'react';
 import  ReactDOM  from 'react-dom';
 import  './App.css';
 
-
 import { confirmAlert } from 'react-confirm-alert'; // Import
-//import 'react-confirm-alert/src/react-confirm-alert.css' // Import css
+//import 'react-confirm-alert/src/react-confirm-alert.css' // Changed Import css
 
 import './react-confirm-alert.css' // Import css
-
-
-
 
 
 
@@ -19,14 +15,12 @@ class Clock extends React.Component {
     
     this.state = {
       date: new Date(),
-      setTime : '',
       inputMinutes: '--',
       inputHours: '--',
       ringTime: '',
       pause: false
     };
   }
-
 
 
   // popZvrr = () => {
@@ -137,7 +131,7 @@ class Clock extends React.Component {
     })
   }
 
- // alarmHandler() {
+
   alarmSet() {
      
     if(this.state.inputHours.length < 3 &&  this.state.inputMinutes.length < 3
