@@ -195,7 +195,9 @@ class Clock extends React.Component {
   }
 
   /******************** *******************/
-
+  noKey (e) {
+    e.preventDefault();
+  }
 
   render() {
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -232,11 +234,13 @@ class Clock extends React.Component {
         <form onSubmit={() => this.alarmHandler()}>
           <h2 className = 'black-txt' >Set Time</h2>
 
-            <input  type = "number"  placeholder = '--' min="0" max="23"             
-              onChange = {(event) => this.handleHour(event)}
+            <input  type = "number"  placeholder = '--' min="0" max="23" 
+            onKeyPress = {(e)=>this.noKey(e)}
+            onChange = {(event) => this.handleHour(event)}
             />
 
             <input type = "number" placeholder = '--' min="0" max="59"
+            onKeyPress = {(e)=>this.noKey(e)}
               //step = "5"
             onChange = {(event) => this.handleMinutes(event)}
             />
