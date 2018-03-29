@@ -1,0 +1,61 @@
+body {
+    background-color: palegoldenrod;
+    background-image: url("./assets/stains_paper.jpg");
+    background-size: cover;
+}
+
+.light-txt {
+    color: mintcream
+}
+
+.black-txt {
+    color: black
+}
+
+@font-face {
+    font-family: 'digi';
+    src: url('./fonts/digi.ttf') format('truetype'),
+            /* url('./fonts/digi.woff') format('woff')*/
+             ;
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+    color: brown;
+    font-size: 25px;
+    width: 80px;
+    margin: 5px 10px 30px;
+    border-radius: 4px;
+}
+
+.buttons {
+
+    font-size: 18px;
+    width: 110px;
+    margin: 5px 30px 20px;
+    border-radius: 4px;
+}
+
+.serbia{
+    color: rgb(35, 255, 207)
+}
+
+.time-zones {
+   
+    background-color: rgba(170, 255, 237, 0.534);
+    padding-top:20px ;
+    height: 120px;
+    color: rgb(212, 66, 8);
+}
+
+.locale{
+    color: rgb(31, 5, 3)
+}
+
+.digit{
+	font-size:40px;
+	font-family: digi;
+	color:#e73a52;
+	height:65px	;
+	text-shadow: 0 0 20px rgba(230, 58, 82, 0.8);
+}
