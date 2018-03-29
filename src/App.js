@@ -235,12 +235,12 @@ class Clock extends React.Component {
           <h2 className = 'black-txt' >Set Time</h2>
 
             <input  type = "number"  placeholder = '--' min="0" max="23" 
-            onKeyPress = {(e)=>this.noKey(e)}
+           // onKeyPress = {(e)=>this.noKey(e)}
             onChange = {(event) => this.handleHour(event)}
             />
 
             <input type = "number" placeholder = '--' min="0" max="59"
-            onKeyPress = {(e)=>this.noKey(e)}
+          //  onKeyPress = {(e)=>this.noKey(e)}
               //step = "5"
             onChange = {(event) => this.handleMinutes(event)}
             />
