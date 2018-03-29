@@ -55,7 +55,7 @@ class Clock extends React.Component {
     const date = new Date();
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+   // let seconds = date.getSeconds();
 
     if(minutes>49){
       minutes = 10-(60 % minutes)
@@ -140,7 +140,7 @@ class Clock extends React.Component {
      
       this.setState({
         ringTime: this.state.inputHours +":"+ this.state.inputMinutes 
-      }), () =>this.alarmHandler()
+      })
      }
 
   alarmHandler() {
